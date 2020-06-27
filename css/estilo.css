@@ -1,0 +1,284 @@
+/* zera as margens do html */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* navbar css */
+
+.topnav {
+  overflow: hidden;
+  background-color: #3c3857;
+  padding-top: 10px;
+  height: 60px;
+  width: 100%;
+}
+.sideBarMobile {
+  display: none;
+}
+#icon-home {
+  margin-top: 0px;
+  margin-left: 30px;
+  margin-right: 150px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 40px;
+  margin-top: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  color: #a6a3b0;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/* navbar Dropdown css */
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+  margin-right: 70px;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  height: auto;
+  margin: 0;
+}
+.dropdown button {
+  padding: 30px;
+  background-image: url("../img/usuario.JPG");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #3c3857;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
+  background-color: #3c3857;
+}
+
+/*dropdown do icone usuario*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 30px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+/*div para teste da responsividade*/
+.conteudo {
+  background-color: cornflowerblue;
+  margin: 46px 90px 100px 90px;
+  padding: 25px 25px 25px 25px;
+  text-align: center;
+}
+
+/*responsividade de tablet*/
+
+@media screen and (min-width: 459px) and (max-width: 800px) {
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: -45px;
+    margin-right: -5px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #a6a3b0;
+    margin: 4px;
+  }
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    height: auto;
+    padding: 15px;
+  }
+  #icon-home {
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 150px;
+  }
+}
+
+/*responsividade de celular*/
+
+@media screen and (max-width: 458px) {
+  .topnav {
+    display: none;
+  }
+  .sideBarMobile {
+    display: flex;
+  }
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #3c3857;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .openbtn {
+    font-size: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
+
+  .openbtn:hover {
+    background-color: #3c3857;
+    color: #3c3857;
+    border: none;
+  }
+
+  #main {
+    transition: margin-left 0.5s;
+    background-color: #3c3857;
+    width: 100%;
+  }
+  #main .fa {
+    padding: 7px;
+    font-size: 35px;
+    float: right;
+    margin-top: 5px;
+    color: whitesmoke;
+  }
+  #main img {
+    margin-top: 10px;
+    margin-left: 145px;
+    margin-right: 130px;
+    height: 25px;
+  }
+  .sidenav {
+    float: right;
+    overflow: hidden;
+    width: 100%;
+  }
+  .sidebar a {
+    font-size: 8px;
+  }
+
+  .sidenav .dropdown-btn {
+    color: #a6a3b0;
+    cursor: pointer;
+    font-size: 12px;
+    border: none;
+  }
+  .sidenav .dropdown-btn h4 {
+    margin: 0px;
+    margin-left: 15px;
+    margin-right: 5px;
+    width: fit-content;
+    left: 0px;
+    display: inline-block;
+  }
+  .sidenav button {
+    background-color: #3c3857;
+    padding: 20px;
+  }
+
+  .sidenav a:hover,
+  .sidenav:hover .dropdown-btn,
+  .dropdown-btn:focus {
+    background-color: #3c3857;
+    outline-style: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  #usuario2 {
+    padding: 25px;
+    margin-bottom: 30px;
+  }
+
+  /*div para teste de responsividade*/
+  .conteudo {
+    background-color: cornflowerblue;
+    margin: 60px 80px 100px 80px;
+    padding: 30px 100px 30px 100px;
+    position: absolute;
+  }
+}

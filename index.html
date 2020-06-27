@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <script type="text/javascript" src="js/desktop.js"></script>
+  <link href="css/estilo.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  
+  <!-- inicio topnav para desktop -->
+
+  <div class="topnav">
+    <a id="icon-home" href="#home"><img src="img/robo.JPG"></a>
+    <a href="#produtos">Produtos</a>
+    <a href="#pessoas">Pessoas</a>
+    <a href="#infos">Infos</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="onDropdown()">
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- fim topnav para desktop -->
+
+  <!-- inicio sidebar para mobile -->
+
+  <div class="sideBarMobile">
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>=
+      <img src="img/usuario2.JPG" id="usuario2">
+      <div class="sidenav">
+        <button class="dropdown-btn">
+          <h4>Produtos</h4><i class="fa fa-caret-down"></i>
+        </button>
+      </div>
+      <div class="sidenav">
+        <button class="dropdown-btn">
+          <h4>Pessoas</h4><i class="fa fa-caret-down"></i>
+        </button>
+      </div>
+      <div class="sidenav">
+        <button class="dropdown-btn">
+          <h4>Infos</h4><i class="fa fa-caret-down"></i>
+        </button>
+      </div>
+    </div>
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰</button>
+      <img src="img/robo.JPG">
+      <a href="#"><i class="fa fa-search"></i></a>
+    </div>
+  </div>
+
+  <!-- fim sidebar para mobile -->
+
+  <!--Div para fazer o teste de respondividade-->
+
+  <div id="conteudo">
+    <div class="conteudo">
+      <h3>Conteudo</h3>
+    </div>
+  </div>
+
+</body>
+</html>
